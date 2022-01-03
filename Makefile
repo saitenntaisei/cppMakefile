@@ -36,7 +36,6 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
-Core/Src/main.c \
 Core/Src/gpio.c \
 Core/Src/adc.c \
 Core/Src/tim.c \
@@ -116,8 +115,8 @@ AS_DEFS =
 C_DEFS =  \
 -DUSE_HAL_DRIVER \
 -DSTM32F405xx
-'-D__weak=__attribute__((weak))' \
-'-D__packed=__attribute__((__packed__))'
+
+
 # C++ defines
 CPP_DEFS = $(C_DEFS)
 # AS includes
@@ -158,11 +157,11 @@ CPPFLAGS += -MMD -MP -MF"$(@:%.o=%.d)"
 LDSCRIPT = STM32F405RGTx_FLASH.ld
 
 # libraries
-LIBS = -lc -lm -lrdimon
+LIBS = -lc -lm -lnosys 
 LIBS += -lstdc++
 LIBDIR = 
-#LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
-LDFLAGS = $(MCU) -specs=nosys.specs -specs=rdimon.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
+LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
+#LDFLAGS = $(MCU) -specs=nosys.specs -specs=rdimon.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
 
 # default action: build all
 all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex $(BUILD_DIR)/$(TARGET).bin
