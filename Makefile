@@ -63,7 +63,7 @@ Core/Src/system_stm32f4xx.c
 
 # CPP sources
 CPP_SOURCES = \
-$(wildcard Src/*.cpp) \
+$(wildcard Core/Src/*.cpp) \
 
 # ASM sources
 ASM_SOURCES =  \
@@ -160,8 +160,8 @@ LDSCRIPT = STM32F405RGTx_FLASH.ld
 LIBS = -lc -lm -lnosys 
 LIBS += -lstdc++
 LIBDIR = 
-LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
-#LDFLAGS = $(MCU) -specs=nosys.specs -specs=rdimon.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
+#LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
+LDFLAGS = $(MCU) -specs=nosys.specs -specs=rdimon.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
 
 # default action: build all
 all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex $(BUILD_DIR)/$(TARGET).bin
