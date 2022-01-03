@@ -22,7 +22,7 @@
 #include "adc.h"
 #include "tim.h"
 #include "gpio.h"
-
+#include<vector>
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -66,7 +66,7 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
- 
+  std::vector<int>v;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
