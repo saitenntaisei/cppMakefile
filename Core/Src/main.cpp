@@ -22,10 +22,10 @@
 #include "adc.h"
 #include "tim.h"
 #include "gpio.h"
-#include<vector>
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include"mine.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

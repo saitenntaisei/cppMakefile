@@ -3423,7 +3423,7 @@ LOAD c:/tools/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10
 LOAD c:/tools/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
 LOAD c:/tools/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m+fp/hard\libgcc.a
 
-.debug_info     0x00000000     0xf4ce
+.debug_info     0x00000000    0x11270
  .debug_info    0x00000000      0x55f build/gpio.o
  .debug_info    0x0000055f      0xb75 build/adc.o
  .debug_info    0x000010d4     0x1350 build/tim.o
@@ -3437,10 +3437,10 @@ LOAD c:/tools/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10
  .debug_info    0x00006896     0x4062 build/stm32f4xx_hal_tim.o
  .debug_info    0x0000a8f8     0x1c6a build/stm32f4xx_hal_tim_ex.o
  .debug_info    0x0000c562      0x5b3 build/system_stm32f4xx.o
- .debug_info    0x0000cb15     0x2997 build/main.o
- .debug_info    0x0000f4ac       0x22 build/startup_stm32f405xx.o
+ .debug_info    0x0000cb15     0x4739 build/main.o
+ .debug_info    0x0001124e       0x22 build/startup_stm32f405xx.o
 
-.debug_abbrev   0x00000000     0x2185
+.debug_abbrev   0x00000000     0x2228
  .debug_abbrev  0x00000000      0x151 build/gpio.o
  .debug_abbrev  0x00000151      0x1d7 build/adc.o
  .debug_abbrev  0x00000328      0x284 build/tim.o
@@ -3454,8 +3454,8 @@ LOAD c:/tools/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10
  .debug_abbrev  0x000013f2      0x282 build/stm32f4xx_hal_tim.o
  .debug_abbrev  0x00001674      0x298 build/stm32f4xx_hal_tim_ex.o
  .debug_abbrev  0x0000190c      0x11b build/system_stm32f4xx.o
- .debug_abbrev  0x00001a27      0x74c build/main.o
- .debug_abbrev  0x00002173       0x12 build/startup_stm32f405xx.o
+ .debug_abbrev  0x00001a27      0x7ef build/main.o
+ .debug_abbrev  0x00002216       0x12 build/startup_stm32f405xx.o
 
 .debug_loc      0x00000000     0xaa31
  .debug_loc     0x00000000       0x38 build/gpio.o
@@ -3522,7 +3522,7 @@ LOAD c:/tools/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10
  .debug_ranges  0x000009a8       0x20 build/main.o
  .debug_ranges  0x000009c8       0x20 build/startup_stm32f405xx.o
 
-.debug_line     0x00000000     0xae6b
+.debug_line     0x00000000     0xaf57
  .debug_line    0x00000000      0x255 build/gpio.o
  .debug_line    0x00000255      0x300 build/adc.o
  .debug_line    0x00000555      0x6bb build/tim.o
@@ -3536,10 +3536,10 @@ LOAD c:/tools/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10
  .debug_line    0x00003e1b     0x4a97 build/stm32f4xx_hal_tim.o
  .debug_line    0x000088b2     0x1cbc build/stm32f4xx_hal_tim_ex.o
  .debug_line    0x0000a56e      0x242 build/system_stm32f4xx.o
- .debug_line    0x0000a7b0      0x645 build/main.o
- .debug_line    0x0000adf5       0x76 build/startup_stm32f405xx.o
+ .debug_line    0x0000a7b0      0x731 build/main.o
+ .debug_line    0x0000aee1       0x76 build/startup_stm32f405xx.o
 
-.debug_str      0x00000000     0x5a38
+.debug_str      0x00000000     0x649d
  .debug_str     0x00000000      0x2ec build/gpio.o
                                 0x350 (size before relaxing)
  .debug_str     0x000002ec      0x487 build/adc.o
@@ -3566,9 +3566,9 @@ LOAD c:/tools/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10
                                 0xe8c (size before relaxing)
  .debug_str     0x000033e2       0x47 build/system_stm32f4xx.o
                                 0x347 (size before relaxing)
- .debug_str     0x00003429     0x25eb build/main.o
-                               0x2abb (size before relaxing)
- .debug_str     0x00005a14       0x24 build/startup_stm32f405xx.o
+ .debug_str     0x00003429     0x3050 build/main.o
+                               0x356b (size before relaxing)
+ .debug_str     0x00006479       0x24 build/startup_stm32f405xx.o
                                  0x3c (size before relaxing)
 
 .comment        0x00000000       0x4d

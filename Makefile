@@ -115,7 +115,8 @@ AS_DEFS =
 C_DEFS =  \
 -DUSE_HAL_DRIVER \
 -DSTM32F405xx
-
+-D'__weak=__attribute__((weak))' \
+-D'__packed=__attribute__((__packed__))'
 
 # C++ defines
 CPP_DEFS = $(C_DEFS)
