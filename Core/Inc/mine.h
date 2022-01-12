@@ -7,7 +7,6 @@
 #include "stdlib.h"
 #include "stdarg.h"
 #include "math.h"
-#define PI 3.14159
 
 #ifdef __cplusplus
 #include <vector>
